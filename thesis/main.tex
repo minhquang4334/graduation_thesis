@@ -1,0 +1,57 @@
+% README
+% ------
+% apt install texlive-full texlive-science
+% thieu gi thieu apt search <cai bi thieu> hoac tra google
+% sau do dien vao cac file input va compile file main
+\documentclass{hust}
+
+\lfoot{Nguyen Van X - 201xxxxx - ICTx K6x}
+
+\input{acro}
+
+\begin{document}
+
+\input{chapters/other/cover}
+
+\input{chapters/other/mission}
+
+\addcontentsline{toc}{chapter}{Acknowledgement}
+\chapter*{Acknowledgement}
+\input{chapters/other/acknowledgement}
+
+\addcontentsline{toc}{chapter}{Abstract}
+\chapter*{Abstract}
+\input{chapters/other/abstract}
+
+\input{chapters/other/abstract-vi}
+
+\addcontentsline{toc}{chapter}{Preface}
+\chapter*{Preface}
+\input{chapters/other/preface}
+
+\addcontentsline{toc}{chapter}{Glossaries}
+\chapter*{Glossaries}
+\input{chapters/other/glossaries}
+
+\listoftables
+\listoffigures
+
+\newpage
+\tableofcontents
+\newpage
+
+\acresetall
+
+\input{chapters/introduction/index}
+\input{chapters/problem/index}
+\input{chapters/propose/index}
+\input{chapters/result/index}
+
+\chapter*{Conclusion}
+\addcontentsline{toc}{chapter}{Conclusion}
+\input{chapters/other/conclusion}
+\lipsum % you may consider delete this line
+
+\bibliographystyle{plain}
+\bibliography{ref}
+\end{document}
