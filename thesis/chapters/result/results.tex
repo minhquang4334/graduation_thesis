@@ -1,0 +1,74 @@
+
+\subsection{Kết quả so sánh CEA, MFEA, MFEA-II}
+
+  Tham số thực nghiệm mô hình: \\
+$pop size: 90\\
+numberiterations: 1000\\
+sbxdi: 2\\
+pmdi: 5\\
+pswap: 0.5\\
+dimension: 50\\
+rmp: 0.3\\
+repeat: 10\\
+$
+
+\begin{table}
+	\caption{4-bit even parity problem}
+    \begin{center}
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+    \multirow{1}{*}{\textbf{Method}} & \multicolumn{1}{c|}{\textbf{Subtask1}} & \multicolumn{1}{c|}{\textbf{Subtask 2}} & \multicolumn{1}{c|}{\textbf{Subtask 3}} \\ \hline
+    CEA (4,5,6) & $0.0331 \pm 0.0091 $& $0.0166 \pm 0.0097$ & $\mathbf{0.0058 \pm 0.0012}$ \\ 
+    MFEA (4,5,6) & $0.0268 \pm 0.0078$ & $\mathbf{0.0116 \pm 0.0034}$ & $0.0068 \pm 0.0016$ \\ 
+    MFEAII (4,5,6)  & $\mathbf{0.0260 \pm 0.01}$ & $0.0163 \pm 0.0083$ & $0.0140 \pm 0.0106$ \\ \hline
+    CEA (6,7,8) & $0.0115 \pm 0.0083$ & $0.0072 \pm 0.0064$ & $0.0026 \pm 0.0018$ \\ 
+    MFEA (6,7,8) & $\mathbf{0.0082 \pm 0.0051}$ & $\mathbf{0.0029 \pm 0.0012}$ & $\mathbf{0.0012 \pm 0.0009}$ \\ 
+    MFEAII (6,7,8)  & $0.0091 \pm 0.0066$ & $0.0038 \pm 0.0024$ & $0.0013 \pm 0.001$ \\ \hline
+    
+    \end{tabular}
+    \end{center}
+    
+    \label{tab:result:nbit}
+   
+    \caption{6-bit even parity problem}
+    \begin{center}
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+    \multirow{1}{*}{\textbf{Method}} & \multicolumn{1}{c|}{\textbf{Subtask1}} & \multicolumn{1}{c|}{\textbf{Subtask 2}} & \multicolumn{1}{c|}{\textbf{Subtask 3}} \\ \hline
+    CEA (4,5,6) & $0.0514 \pm 0.0096$ & $0.0378 \pm 0.0091$ & $0.0279 \pm 0.0086$ \\ 
+    MFEA (4,5,6) & $\mathbf{0.0457 \pm 0.0164}$ & $\mathbf{0.0323 \pm 0.0074}$ & $\mathbf{0.0245 \pm 0.0065}$ \\ 
+    MFEAII (4,5,6)  & $0.0545 \pm 0.0161$ & $0.037 \pm 0.0102$ & $0.0333 \pm 0.0116$ \\ \hline
+    CEA (5,6,7) & $\mathbf{0.0321 \pm 0.0077}$ & $0.0326 \pm 0.0088$ & $0.0267 \pm 0.0114$  \\ 
+    MFEA (5,6,7) & $0.0379 \pm 0.013$ & $0.0288 \pm 0.01$ & $0.022 \pm 0.0078$ \\ 
+    MFEAII (5,6,7)  &$ 0.0403 \pm 0.0114$ &$\mathbf{ 0.0283 \pm 0.01} $& $\mathbf{0.0197 \pm 0.0061}$ \\ \hline
+    CEA (6,7,8) & $0.0298 \pm 0.012$ & $0.0219 \pm 0.0073$ & $0.0224 \pm 0.0061$ \\ 
+    MFEA (6,7,8) & $\mathbf{0.0251 \pm 0.0085}$ & $\mathbf{0.0185 \pm 0.005}$ & $\mathbf{0.0143 \pm 0.0047}$ \\ 
+    MFEAII (6,7,8)  &$ 0.0289 \pm 0.0066$ &$ 0.023 \pm 0.0079$ & $0.0193 \pm 0.0076$ \\ \hline
+    
+    \end{tabular}
+    \end{center}
+    
+    \label{tab:result:nbit}
+    
+    \caption{8-bit even parity problem}
+    \begin{center}
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+    \multirow{1}{*}{\textbf{Method}} & \multicolumn{1}{c|}{\textbf{Subtask1}} & \multicolumn{1}{c|}{\textbf{Subtask 2}} & \multicolumn{1}{c|}{\textbf{Subtask 3}} \\ \hline
+    CEA (5,6,7) & $0.0524 \pm 0.0122$ & $0.0401 \pm 0.0118$ & $0.0424 \pm 0.0099$  \\ 
+    MFEA (5,6,7) & $\mathbf{0.0502 \pm 0.0118}$ & $0.0377 \pm 0.008$ & $\mathbf{0.0288 \pm 0.0071}$ \\ 
+    MFEAII (5,6,7)  & $0.0537 \pm 0.0108$ &$ \mathbf{0.0359 \pm 0.0066}$ &$ 0.0352 \pm 0.0085$ \\ \hline
+    CEA (7,8,9) & $0.0334 \pm 0.0085$ & $0.0326 \pm 0.0086$ & $0.0244 \pm 0.0048$ \\ 
+    MFEA (7,8,9) & $\mathbf{0.0323 \pm 0.0119}$ & $\mathbf{0.0237 \pm 0.0085}$ & $\mathbf{0.0196 \pm 0.0055}$ \\ 
+    MFEAII (7,8,9)  & $0.0348 \pm 0.0088$ &$ 0.0303 \pm 0.0078$ &$ 0.0283 \pm 0.0083$ \\ \hline
+    CEA (8,9,10)  & $0.0288 \pm 0.0067$ & $0.0331 \pm 0.0098$& $0.0259 \pm 0.0054$ \\ 
+    MFEA (8,9,10)  & $0.0332 \pm 0.0122$ & $\mathbf{0.0230 \pm 0.0065}$ & $ 0.0252 \pm 0.0085$ \\ 
+    MFEAII (8,9,10)  & $\mathbf{0.0282 \pm 0.0074}$ & $0.0270 \pm 0.0074$& $\mathbf{0.0223 \pm 0.0056}$ \\ \hline
+    
+    \end{tabular}
+    \end{center}
+    
+    \label{tab:result:nbit}
+\end{table}
+\subsection{UCI Instances}
+\input{chapters/result/small_instance}
