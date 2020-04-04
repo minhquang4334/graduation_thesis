@@ -5,7 +5,9 @@
 % sau do dien vao cac file input va compile file main
 \documentclass{hust}
 \usepackage[utf8]{vietnam}
-\lfoot{Nguyen Van X - 201xxxxx - ICTx K6x}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\lfoot{Hoang Minh Quang - 20152945 - AS K60}
 
 \input{acro}
 \begin{document}
@@ -14,22 +16,22 @@
 
 \input{chapters/other/mission}
 
-\addcontentsline{toc}{chapter}{Acknowledgement}
-\chapter*{Acknowledgement}
+\addcontentsline{toc}{chapter}{Lời cảm ơn}
+\chapter*{Lời cảm ơn}
 \input{chapters/other/acknowledgement}
 
-\addcontentsline{toc}{chapter}{Abstract}
-\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Tóm tắt}
+\chapter*{Tóm tắt}
 \input{chapters/other/abstract}
 
 \input{chapters/other/abstract-vi}
 
-\addcontentsline{toc}{chapter}{Preface}
-\chapter*{Preface}
+\addcontentsline{toc}{chapter}{Lời Nói Đầu}
+\chapter*{Lời Nói Đầu}
 \input{chapters/other/preface}
 
-\addcontentsline{toc}{chapter}{Glossaries}
-\chapter*{Glossaries}
+\addcontentsline{toc}{chapter}{Thuật Ngữ}
+\chapter*{Thuật Ngữ}
 \input{chapters/other/glossaries}
 
 \listoftables
@@ -43,11 +45,12 @@
 
 \input{chapters/introduction/index}
 \input{chapters/problem/index}
+\input{chapters/problem_rl/index}
 \input{chapters/propose/index}
 \input{chapters/result/index}
 
 \chapter*{Conclusion}
-\addcontentsline{toc}{chapter}{Conclusion}
+\addcontentsline{toc}{chapter}{Kết Luận}
 \input{chapters/other/conclusion}
 \lipsum % you may consider delete this line
 
